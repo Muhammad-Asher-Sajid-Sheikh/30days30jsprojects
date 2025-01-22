@@ -1,0 +1,164 @@
+body{
+    margin: 0;
+    background-color: #111;
+}
+
+.mainTitle{
+    width: 100%;
+    color: white;
+    background-color: black;
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    padding: 15px;
+    text-align: center;
+}
+
+/*Gallery*/
+.gallery{
+    margin: 2% 5%;
+    clear: both;
+    position: relative;
+    top: 10px;
+    margin-bottom: 10px;
+}
+
+.card{
+    width: 22%;
+    float: left;
+    margin-right: 2%;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+    padding: 0.5px;
+    border-radius: 10px;
+    transition: 0.4s ease-in-out;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cardtitle{
+    font-size: 2.5vw;
+    color: white;
+    text-decoration: none;
+    height: 75px;
+}
+
+.carddesc{
+    height: 70px;
+    color: white;
+    text-decoration: none;
+    overflow: hidden;
+    margin-bottom: 5px;
+    font-size: 1.1vw;
+    padding: 0 2px;
+}
+
+.cardbtn{
+    text-decoration: none;
+    border: 1px solid white;
+    color: white;
+    padding: 15px 5px;
+    margin: 0 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: 0.4s linear;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 5px #d9d9d9, -5px -5px 5px whitesmoke;
+}
+
+.card:hover .cardbtn{
+    background-color: white;
+    color: black;
+}
+
+/*Gallery*/
+
+/*Footer*/
+.footer{
+    background-color: black;
+    padding: 40px;
+    margin-top: 15px;
+    clear: both;
+    position: relative;
+    top: 10px;
+}
+
+.fdesc{
+    text-align: center;
+    color:white;
+}
+
+.fdesc span{
+    font-size: 30px;
+}
+/*Footer*/
+
+@media screen AND (max-width:1000px) {
+    .picsl, .picsr{
+        width: 50%;
+    }
+}
+
+@media screen AND (max-width:900px) {
+    .linebreak{
+        display: block;
+    }
+
+    .topgallery .largephoto{
+        width: 100%;
+    }
+
+    .topgallery .smallphoto{
+        width: 48.4%;
+    }
+}
+
+@media screen AND (max-width:800px){
+    .card{
+        width: 30%;
+    }
+
+    .cardtitle{
+        font-size: 3vw;
+    }
+
+    .carddesc{
+        font-size: 1.8vw;
+    }
+}
+
+@media screen AND (max-width:520px) {
+    .card{
+        width: 46%;
+    }
+
+    .cardtitle{
+        font-size: 5vw;
+    }
+
+    .carddesc{
+        font-size: 3vw;
+    }
+}
+
+@media screen AND (max-width:390px){
+    .card{
+        width: 100%;
+    }
+
+    .cardtitle{
+        font-size: 7vw;
+    }
+
+    .carddesc{
+        font-size: 5vw;
+    }
+}
